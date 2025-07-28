@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import User from "@/models/User";
 import { connectionToDB } from "../../../../../lib/db";
-
+ 
 export async function POST(request: NextRequest){
     try {
       const {email, password} = await request.json();
